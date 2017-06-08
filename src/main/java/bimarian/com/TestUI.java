@@ -10,7 +10,7 @@ public class TestUI {
 	//@Test
 	public void test01Firefox(){
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://bimarian.com");
+		driver.get("http://google.com");
 		System.out.println("Firefox browser opened and navigated to Bimarian site");
 		driver.quit();
 	}
@@ -19,7 +19,7 @@ public class TestUI {
 	public void test02Chrome(){
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://bimarian.com");
+		driver.get("http://google.com");
 		System.out.println("Chrome browser opened and navigated to Bimarian site");
 		driver.quit();
 	}
