@@ -1,31 +1,26 @@
-package com.memorynotfound.test;
+package bimarian.com;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
-public class FireFoxSeleniumTest {
-
-    private static WebDriver driver;
-
-    @BeforeClass
-    public static void setUp(){
-        driver = new FirefoxDriver();
-    }
-
-    @Test
-    public void testFireFoxSelenium() {
-        driver.get("http://www.memorynotfound.com/");
-    }
-
-    @AfterClass
-    public static void cleanUp(){
-        if (driver != null) {
-            driver.close();
-            driver.quit();
-        }
-    }
-
+public class TestUI {
+	
+	//@Test
+	public void test01Firefox(){
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://google.com");
+		System.out.println("Firefox browser opened and navigated to google site");
+		driver.quit();
+	}
+	
+	@Test
+	public void test02Chrome(){
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://google.com");
+		System.out.println("Chrome browser opened and navigated to google site");
+		driver.quit();
+	}
 }
