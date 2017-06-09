@@ -19,8 +19,8 @@ public class TestUI {
 	public void test02Chrome(){
 		System.setProperty("http.proxyHost", "10.51.233.60");
 		System.setProperty("http.proxyPort", "8080");
-		System.setProperty("http.proxyUser", “vishakha_thakur”);
-		System.setProperty("http.proxyPassword", “ajit1712@”);
+		System.setProperty("http.proxyUser", "vishakha_thakur@persistent.co.in");
+		System.setProperty("http.proxyPassword", "ajit1712@");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://bimarian.com");
