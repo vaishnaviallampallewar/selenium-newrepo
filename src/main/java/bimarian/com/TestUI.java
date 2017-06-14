@@ -12,7 +12,7 @@ public class TestUI {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://bimarian.com");
 		System.out.println("Firefox browser opened and navigated to google site");
-		driver.close();
+		driver.quit();
 	}
 	
 	@Test
@@ -22,6 +22,6 @@ public class TestUI {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://bimarian.com");
 		System.out.println("Chrome browser opened and navigated to google site");
-		driver.close();
+		driver.quit();
 	}
 }
