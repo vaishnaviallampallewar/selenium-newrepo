@@ -22,10 +22,6 @@ public class TestUI {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://blazemeter.com");
 		System.out.println("Chrome browser opened and navigated to google site");
-		WebElement title = driver.findElement(By.xpath("//title"));
-   	 	System.out.println("********************************************************");
-   	        System.out.println("*" + title.getAttribute("text") + "*");
-     	        System.out.println("********************************************************")
 		driver.quit();
 	}
 }
