@@ -9,6 +9,7 @@ public class TestUI {
 	
 	//@Test
 	public void test01Firefox(){
+		System.setProperty("webdriver.firefox.driver", "/usr/bin/firefox");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://bimarian.com");
 		System.out.println("Firefox browser opened and navigated to google site");
