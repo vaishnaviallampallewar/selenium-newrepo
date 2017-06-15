@@ -12,7 +12,7 @@ public class TestUI {
 		System.setProperty("webdriver.firefox.driver", "/usr/bin/firefox");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://bimarian.com");
-		System.out.println("Firefox browser opened and navigated to google site");
+		System.out.println("Firefox browser opened and navigated to bimarian site");
 		driver.quit();
 	}
 	
@@ -22,7 +22,7 @@ public class TestUI {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://bimarian.com");
-		System.out.println("Chrome browser opened and navigated to google site");
+		System.out.println("Chrome browser opened and navigated to bimarian site");
 		driver.quit();
 	}
 }
