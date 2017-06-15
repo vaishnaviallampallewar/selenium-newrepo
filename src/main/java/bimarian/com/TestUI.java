@@ -19,6 +19,7 @@ public class TestUI {
 	public void test02Chrome(){
 		
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		log.info(System.getProperty('webdriver.chrome.driver'));
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://blazemeter.com");
 		System.out.println("Chrome browser opened and navigated to google site");
