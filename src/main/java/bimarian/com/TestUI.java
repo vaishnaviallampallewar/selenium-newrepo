@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestUI {
 	
-	@Test
+	//@Test
 	public void test01Firefox(){
 		System.setProperty("webdriver.firefox.driver", "/usr/bin/firefox");
 		WebDriver driver = new FirefoxDriver();
