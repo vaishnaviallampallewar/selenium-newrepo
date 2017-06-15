@@ -21,8 +21,8 @@ public class TestUI {
 		
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://bimarian.com");
-		System.out.println("Chrome browser opened and navigated to bimarian site");
+		driver.get("http://google.com");
+		System.out.println("Chrome browser opened and navigated to google site");
 		driver.quit();
 	}
 }
