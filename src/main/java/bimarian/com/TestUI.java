@@ -22,7 +22,7 @@ public class TestUI {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://google.com");
-		System.out.println("Lets see what happens !!! \n Sometimes this and sometimes that");
+		System.out.println("Lets see what happens !!!");
 		driver.quit();
 	}
 }
